@@ -1,0 +1,5 @@
+# Nextcloud cron job for background tasks.
+# Install using:
+#   sudo -u www-data crontab configs/system/cron-nextcloud.example
+
+*/5 * * * * php -f /var/www/nextcloud/cron.php

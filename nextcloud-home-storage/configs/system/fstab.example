@@ -1,0 +1,4 @@
+# Example /etc/fstab entries for Nextcloud data disks.
+
+UUID=XXXX-XXXX-XXXX-XXXX  /mnt/nextcloud-data   ext4  defaults  0  2
+UUID=YYYY-YYYY-YYYY-YYYY  /mnt/nextcloud-extra  ext4  defaults  0  2

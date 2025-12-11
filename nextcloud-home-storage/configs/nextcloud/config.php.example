@@ -1,0 +1,30 @@
+$CONFIG = array (
+  'instanceid' => 'INSTANCE_ID_PLACEHOLDER',
+  'passwordsalt' => 'PASSWORD_SALT_PLACEHOLDER',
+  'secret' => 'SECRET_PLACEHOLDER',
+
+  'trusted_domains' => array (
+    0 => '<VM_LAN_IP>',        // e.g. 10.0.0.X
+    1 => '<NEXTCLOUD_HOSTNAME>',
+  ),
+
+  'datadirectory' => '/mnt/nextcloud-data',
+
+  'dbtype' => 'mysql',
+  'version' => '32.0.2.2',  // example
+
+  'overwrite.cli.url' => 'http://<VM_LAN_IP>',
+
+  'dbname' => 'nextcloud',
+  'dbhost' => 'localhost',
+  'dbuser' => 'ncuser',
+  'dbpassword' => 'CHANGE_ME_DB_PASSWORD',
+
+  'installed' => true,
+
+  'memcache.local' => '\\OC\\Memcache\\Redis',
+  'redis' => array (
+    'host' => '127.0.0.1',
+    'port' => 6379,
+  ),
+);
